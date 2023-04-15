@@ -11,7 +11,6 @@ public class Trader {
 			this.id = Integer.parseInt(elements[0]);
 			this.name = elements[1];
 			this.city = elements[2];
-
 		}
 	}
 
@@ -24,8 +23,12 @@ public class Trader {
 		return trader;
 	}
 
+	public Trader(String name, String city) {
+		this.name = name;
+		this.city = city;
+	}
+
 	public Trader(int id, String name, String city) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.city = city;
@@ -59,5 +62,4 @@ public class Trader {
 	public String toString() {
 		return "Trader [id=" + id + ", name=" + name + ", city=" + city + "]";
 	}
-
 }

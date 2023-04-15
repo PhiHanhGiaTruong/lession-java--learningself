@@ -19,7 +19,7 @@ public class Ex02 {
         List<Dish> menu = DataModel.getDishes();
 //        List<Dish> result = filter(menu);
         List<Dish> result = filter(menu, dish -> dish.getCalories()>400);
-        result.forEach(System.out::println);
+//        result.forEach(System.out::println);
         System.out.println("=============================");
 //
 //        B1: Convert Data_Source to Stream

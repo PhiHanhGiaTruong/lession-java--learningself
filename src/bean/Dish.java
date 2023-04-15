@@ -74,14 +74,13 @@ public class Dish {
         MEAT, FISH, OTHER
     }
 
-    public static class nameCaloriesParameter {
+    public static class NameCaloriesParameter {
         private String name;
         private double calories;
 
-        public nameCaloriesParameter(String name, double calories) {
+        public NameCaloriesParameter(String name, double calories) {
             this.name = name;
             this.calories = calories;
-
         }
 
         public String getName() {
@@ -98,6 +97,14 @@ public class Dish {
 
         public void setCalories(double calories) {
             this.calories = calories;
+        }
+
+        @Override
+        public String toString() {
+            return "NameCaloriesParameter{" +
+                    "name='" + name + '\'' +
+                    ", calories=" + calories +
+                    '}';
         }
     }
 
